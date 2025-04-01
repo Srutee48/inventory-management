@@ -6,7 +6,7 @@ const router = express.Router();
 // router.get("/admin/dashboard" , authenticateUser ,authorizeRoles(["admin"]),(req,res)=> { 
 //     res.json({ message: "Welcome to the Admin Dashboard!"});
 // });
-router.get("api//admin/dashboard", authenticateUser, authorizeRoles(["admin"]), (req, res) => {
+router.get("api/admin/dashboard", authenticateUser, authorizeRoles(["admin"]), (req, res) => {
     res.json({
         message: "Welcome to the Admin Dashboard!"
     });
